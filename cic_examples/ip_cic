@@ -1,0 +1,166 @@
+Name:         install-wv8vz
+Namespace:    openshift-operators
+Labels:       operators.coreos.com/citrix-ingress-controller-operator.openshift-operators=
+Annotations:  <none>
+API Version:  operators.coreos.com/v1alpha1
+Kind:         InstallPlan
+Metadata:
+  Creation Timestamp:  2021-03-30T12:29:36Z
+  Generate Name:       install-
+  Generation:          1
+  Managed Fields:
+    API Version:  operators.coreos.com/v1alpha1
+    Fields Type:  FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .:
+          f:operators.coreos.com/citrix-ingress-controller-operator.openshift-operators:
+    Manager:      olm
+    Operation:    Update
+    Time:         2021-03-30T12:29:36Z
+    API Version:  operators.coreos.com/v1alpha1
+    Fields Type:  FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:generateName:
+        f:ownerReferences:
+          .:
+          k:{"uid":"26de89dd-7021-4df5-bba7-93036f63446f"}:
+            .:
+            f:apiVersion:
+            f:blockOwnerDeletion:
+            f:controller:
+            f:kind:
+            f:name:
+            f:uid:
+      f:spec:
+        .:
+        f:approval:
+        f:approved:
+        f:clusterServiceVersionNames:
+        f:generation:
+      f:status:
+        .:
+        f:bundleLookups:
+        f:catalogSources:
+        f:conditions:
+        f:phase:
+        f:plan:
+    Manager:    catalog
+    Operation:  Update
+    Time:       2021-03-30T12:29:39Z
+  Owner References:
+    API Version:           operators.coreos.com/v1alpha1
+    Block Owner Deletion:  false
+    Controller:            false
+    Kind:                  Subscription
+    Name:                  citrix-ingress-controller-operator
+    UID:                   26de89dd-7021-4df5-bba7-93036f63446f
+  Resource Version:        5227284
+  Self Link:               /apis/operators.coreos.com/v1alpha1/namespaces/openshift-operators/installplans/install-wv8vz
+  UID:                     d60370c9-28c8-453d-9fc6-d253656d817e
+Spec:
+  Approval:  Automatic
+  Approved:  true
+  Cluster Service Version Names:
+    citrix-ingress-controller-operator.v1.10.2
+  Generation:  1
+Status:
+  Bundle Lookups:
+    Catalog Source Ref:
+      Name:       certified-operators
+      Namespace:  openshift-marketplace
+    Identifier:   citrix-ingress-controller-operator.v1.10.2
+    Path:         registry.connect.redhat.com/citrix/citrix-k8s-ingress-bundle@sha256:5c6ac2080d44359c7021411443e7ab038414fc7d9e66b8f5d89a8c525d1682b6
+    Properties:   {"properties":[{"type":"olm.gvk","value":{"group":"citrix.com","kind":"CitrixIngressController","version":"v1alpha1"}},{"type":"olm.package","value":{"packageName":"citrix-ingress-controller-operator","version":"1.10.2"}}]}
+    Replaces:     
+  Catalog Sources:
+  Conditions:
+    Last Transition Time:  2021-03-30T12:29:36Z
+    Last Update Time:      2021-03-30T12:29:36Z
+    Status:                True
+    Type:                  Installed
+  Phase:                   Complete
+  Plan:
+    Resolving:  citrix-ingress-controller-operator.v1.10.2
+    Resource:
+      Group:             operators.coreos.com
+      Kind:              ClusterServiceVersion
+      Manifest:          {"kind":"ConfigMap","name":"b5cdc2e0673719bd578d91516bb397c133e08f2684ac9c92e405a7dc7cf1dc9","namespace":"openshift-marketplace","catalogSourceName":"certified-operators","catalogSourceNamespace":"openshift-marketplace","replaces":"","properties":"{\"properties\":[{\"type\":\"olm.gvk\",\"value\":{\"group\":\"citrix.com\",\"kind\":\"CitrixIngressController\",\"version\":\"v1alpha1\"}},{\"type\":\"olm.package\",\"value\":{\"packageName\":\"citrix-ingress-controller-operator\",\"version\":\"1.10.2\"}}]}"}
+      Name:              citrix-ingress-controller-operator.v1.10.2
+      Source Name:       certified-operators
+      Source Namespace:  openshift-marketplace
+      Version:           v1alpha1
+    Status:              Created
+    Resolving:           citrix-ingress-controller-operator.v1.10.2
+    Resource:
+      Group:             rbac.authorization.k8s.io
+      Kind:              ClusterRole
+      Manifest:          {"kind":"ConfigMap","name":"b5cdc2e0673719bd578d91516bb397c133e08f2684ac9c92e405a7dc7cf1dc9","namespace":"openshift-marketplace","catalogSourceName":"certified-operators","catalogSourceNamespace":"openshift-marketplace","replaces":"","properties":"{\"properties\":[{\"type\":\"olm.gvk\",\"value\":{\"group\":\"citrix.com\",\"kind\":\"CitrixIngressController\",\"version\":\"v1alpha1\"}},{\"type\":\"olm.package\",\"value\":{\"packageName\":\"citrix-ingress-controller-operator\",\"version\":\"1.10.2\"}}]}"}
+      Name:              citrix-ingress-controller-operator-metrics-reader
+      Source Name:       certified-operators
+      Source Namespace:  openshift-marketplace
+      Version:           v1beta1
+    Status:              Present
+    Resolving:           citrix-ingress-controller-operator.v1.10.2
+    Resource:
+      Group:             apiextensions.k8s.io
+      Kind:              CustomResourceDefinition
+      Manifest:          {"kind":"ConfigMap","name":"b5cdc2e0673719bd578d91516bb397c133e08f2684ac9c92e405a7dc7cf1dc9","namespace":"openshift-marketplace","catalogSourceName":"certified-operators","catalogSourceNamespace":"openshift-marketplace","replaces":"","properties":"{\"properties\":[{\"type\":\"olm.gvk\",\"value\":{\"group\":\"citrix.com\",\"kind\":\"CitrixIngressController\",\"version\":\"v1alpha1\"}},{\"type\":\"olm.package\",\"value\":{\"packageName\":\"citrix-ingress-controller-operator\",\"version\":\"1.10.2\"}}]}"}
+      Name:              citrixingresscontrollers.citrix.com
+      Source Name:       certified-operators
+      Source Namespace:  openshift-marketplace
+      Version:           v1beta1
+    Status:              Present
+    Resolving:           citrix-ingress-controller-operator.v1.10.2
+    Resource:
+      Group:             
+      Kind:              ServiceAccount
+      Manifest:          {"kind":"ConfigMap","name":"b5cdc2e0673719bd578d91516bb397c133e08f2684ac9c92e405a7dc7cf1dc9","namespace":"openshift-marketplace","catalogSourceName":"certified-operators","catalogSourceNamespace":"openshift-marketplace","replaces":"","properties":"{\"properties\":[{\"type\":\"olm.gvk\",\"value\":{\"group\":\"citrix.com\",\"kind\":\"CitrixIngressController\",\"version\":\"v1alpha1\"}},{\"type\":\"olm.package\",\"value\":{\"packageName\":\"citrix-ingress-controller-operator\",\"version\":\"1.10.2\"}}]}"}
+      Name:              default
+      Source Name:       certified-operators
+      Source Namespace:  openshift-marketplace
+      Version:           v1
+    Status:              Present
+    Resolving:           citrix-ingress-controller-operator.v1.10.2
+    Resource:
+      Group:             rbac.authorization.k8s.io
+      Kind:              Role
+      Manifest:          {"kind":"ConfigMap","name":"b5cdc2e0673719bd578d91516bb397c133e08f2684ac9c92e405a7dc7cf1dc9","namespace":"openshift-marketplace","catalogSourceName":"certified-operators","catalogSourceNamespace":"openshift-marketplace","replaces":"","properties":"{\"properties\":[{\"type\":\"olm.gvk\",\"value\":{\"group\":\"citrix.com\",\"kind\":\"CitrixIngressController\",\"version\":\"v1alpha1\"}},{\"type\":\"olm.package\",\"value\":{\"packageName\":\"citrix-ingress-controller-operator\",\"version\":\"1.10.2\"}}]}"}
+      Name:              citrix-ingress-controller-operator.v1.10.2-default-5f74c74bd7
+      Source Name:       certified-operators
+      Source Namespace:  openshift-marketplace
+      Version:           v1
+    Status:              Created
+    Resolving:           citrix-ingress-controller-operator.v1.10.2
+    Resource:
+      Group:             rbac.authorization.k8s.io
+      Kind:              RoleBinding
+      Manifest:          {"kind":"ConfigMap","name":"b5cdc2e0673719bd578d91516bb397c133e08f2684ac9c92e405a7dc7cf1dc9","namespace":"openshift-marketplace","catalogSourceName":"certified-operators","catalogSourceNamespace":"openshift-marketplace","replaces":"","properties":"{\"properties\":[{\"type\":\"olm.gvk\",\"value\":{\"group\":\"citrix.com\",\"kind\":\"CitrixIngressController\",\"version\":\"v1alpha1\"}},{\"type\":\"olm.package\",\"value\":{\"packageName\":\"citrix-ingress-controller-operator\",\"version\":\"1.10.2\"}}]}"}
+      Name:              citrix-ingress-controller-operator.v1.10.2-default-5f74c74bd7
+      Source Name:       certified-operators
+      Source Namespace:  openshift-marketplace
+      Version:           v1
+    Status:              Created
+    Resolving:           citrix-ingress-controller-operator.v1.10.2
+    Resource:
+      Group:             rbac.authorization.k8s.io
+      Kind:              ClusterRole
+      Manifest:          {"kind":"ConfigMap","name":"b5cdc2e0673719bd578d91516bb397c133e08f2684ac9c92e405a7dc7cf1dc9","namespace":"openshift-marketplace","catalogSourceName":"certified-operators","catalogSourceNamespace":"openshift-marketplace","replaces":"","properties":"{\"properties\":[{\"type\":\"olm.gvk\",\"value\":{\"group\":\"citrix.com\",\"kind\":\"CitrixIngressController\",\"version\":\"v1alpha1\"}},{\"type\":\"olm.package\",\"value\":{\"packageName\":\"citrix-ingress-controller-operator\",\"version\":\"1.10.2\"}}]}"}
+      Name:              citrix-ingress-controller-operator.v1.10.2-59d54947c6
+      Source Name:       certified-operators
+      Source Namespace:  openshift-marketplace
+      Version:           v1
+    Status:              Created
+    Resolving:           citrix-ingress-controller-operator.v1.10.2
+    Resource:
+      Group:             rbac.authorization.k8s.io
+      Kind:              ClusterRoleBinding
+      Manifest:          {"kind":"ConfigMap","name":"b5cdc2e0673719bd578d91516bb397c133e08f2684ac9c92e405a7dc7cf1dc9","namespace":"openshift-marketplace","catalogSourceName":"certified-operators","catalogSourceNamespace":"openshift-marketplace","replaces":"","properties":"{\"properties\":[{\"type\":\"olm.gvk\",\"value\":{\"group\":\"citrix.com\",\"kind\":\"CitrixIngressController\",\"version\":\"v1alpha1\"}},{\"type\":\"olm.package\",\"value\":{\"packageName\":\"citrix-ingress-controller-operator\",\"version\":\"1.10.2\"}}]}"}
+      Name:              citrix-ingress-controller-operator.v1.10.2-59d54947c6
+      Source Name:       certified-operators
+      Source Namespace:  openshift-marketplace
+      Version:           v1
+    Status:              Created
+Events:                  <none>
